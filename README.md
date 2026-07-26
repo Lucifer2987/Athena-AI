@@ -11,12 +11,13 @@
 ### 🏢 Live Building Digital Twin
 
 | Live Dashboard | Agent Pipeline |
-|---|---|
-| ![Live Dashboard](assets/dashboard_live.png) | ![Agent Pipeline](assets/dashboard_agent.png) |
+<img width="1054" height="978" alt="image" src="https://github.com/user-attachments/assets/d3220f2b-e900-4dce-806c-af094c48f0e3" />
+
 
 ### 📈 Quantitative Savings Report
 
-![Savings Report](assets/savings_report.png)
+<img width="702" height="766" alt="image" src="https://github.com/user-attachments/assets/3e2fd590-435b-47f3-a2d4-d26a0a7e124f" />
+
 
 ---
 
