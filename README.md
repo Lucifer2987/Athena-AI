@@ -11,6 +11,7 @@
 
 | Live Dashboard | Agent Pipeline |
 <img width="1054" height="978" alt="image" src="https://github.com/user-attachments/assets/d3220f2b-e900-4dce-806c-af094c48f0e3" />
+<img width="1311" height="594" alt="image" src="https://github.com/user-attachments/assets/cd7194cb-4687-462f-900e-e2a1f78e6e5e" />
 
 
 ### 📈 Quantitative Savings Report
