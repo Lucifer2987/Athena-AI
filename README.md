@@ -6,7 +6,6 @@
 
 ## 📸 Dashboard Screenshots
 
-> Place your dashboard screenshots in the `assets/` folder and update the image paths below.
 
 ### 🏢 Live Building Digital Twin
 
