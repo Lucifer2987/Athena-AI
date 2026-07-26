@@ -36,19 +36,19 @@
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                  EnergyPlus Simulation                   │
-│        (Building Physics + Thermal Dynamics Engine)       │
+│                  EnergyPlus Simulation                  │
+│        (Building Physics + Thermal Dynamics Engine)     │
 └────────────────────────┬────────────────────────────────┘
                          │  Sensors: Temp, PMV, Electricity
                          ▼
 ┌─────────────────────────────────────────────────────────┐
-│              Athena AI Agent  (runtime.py)               │
-│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌────────┐  │
-│  │  Sensors │→ │  Planner │→ │   LLM    │→ │ Safety │  │
-│  │ (MCP)    │  │          │  │  Policy  │  │  Val.  │  │
-│  └──────────┘  └──────────┘  └──────────┘  └───┬────┘  │
-│                                                 │        │
-│                                          set_temperature  │
+│              Athena AI Agent  (runtime.py)              │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌────────┐   │
+│  │  Sensors │→ │  Planner │→ │   LLM    │→ │ Safety │   │
+│  │ (MCP)    │  │          │  │  Policy  │  │  Val.  │   │
+│  └──────────┘  └──────────┘  └──────────┘  └───┬────┘   │
+│                                                │        │
+│                                         set_temperature │
 └─────────────────────────────────────────────────────────┘
                          │  Writes telemetry row
                          ▼
@@ -57,7 +57,7 @@
                          │  Auto-refresh every 6s
                          ▼
 ┌─────────────────────────────────────────────────────────┐
-│           Streamlit Dashboard  (dashboard.py)            │
+│           Streamlit Dashboard  (dashboard.py)           │
 │    Digital Twin  |  Agent Pipeline  |  Telemetry ROI    │
 └─────────────────────────────────────────────────────────┘
 ```
