@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Logs - keep structure but ignore old archived logs
+logs/simulation_log_*.csv
+logs/*.zip
+
+# EnergyPlus simulation output files (large binary/output files)
+simulations/
+*.err
+*.eso
+*.mtr
+*.rdd
+*.mtd
+*.eio
+*.end
+*.shd
+*.audit
+*.bnd
+*.dbg
+*.dxf
+*.expidf
+*.epmidf
+*.zsz
+*.ssz
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.user
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Streamlit cache
+.streamlit/
+
+# Jupyter
+.ipynb_checkpoints/

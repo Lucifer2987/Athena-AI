@@ -1,0 +1,12 @@
+metric,value
+Baseline Steps,1214.0
+Athena Steps,35.0
+Total Baseline kWh,304746.31
+Total Athena kWh,6004.17
+kWh Saved,298742.14
+% kWh Change,-98.03
+Baseline Comfort %,100.0
+Athena Comfort %,100.0
+Mean Baseline Reward,0.8494
+Mean Athena Reward,0.8971
+AI Confidence,0.9329

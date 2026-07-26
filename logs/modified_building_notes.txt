@@ -1,0 +1,18 @@
+Athena AI -- Runtime Modification Notes
+=========================================
+Run timestamp : 2026-07-26T15:36:18.901439
+Baseline IDF  : C:\EnergyPlusV26-1-0\ExampleFiles\SmallOffice_CentralDOAS.idf
+Weather file  : C:\EnergyPlusV26-1-0\WeatherData\USA_CA_San.Francisco.Intl.AP.724940_TMY3.epw
+Output dir    : simulations\output_20260726_153618
+
+Modifications applied at runtime (via EnergyPlus Python API):
+  - Zone HVAC setpoint actuator: 'CORE_ZN ZN PSZ-AC-1'
+    Variable: 'System Node Setpoint Temp'
+    Control : Athena AI autonomous LLM agent (Qwen2.5 via Ollama)
+  - Setpoint range enforced: 20.0 C - 26.0 C (SafetyValidator)
+  - Planning interval: every 10 timesteps
+  - MCP tools used: read_pmv, read_energy, read_temperature,
+                    get_recent_history, set_temperature
+
+Note: The .idf file itself is NOT modified; all changes are applied
+dynamically through the EnergyPlus Runtime API actuator interface.
