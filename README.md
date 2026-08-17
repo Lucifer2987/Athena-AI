@@ -34,33 +34,7 @@
 
 ## 🧠 System Architecture
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                  EnergyPlus Simulation                  │
-│        (Building Physics + Thermal Dynamics Engine)     │
-└────────────────────────┬────────────────────────────────┘
-                         │  Sensors: Temp, PMV, Electricity
-                         ▼
-┌─────────────────────────────────────────────────────────┐
-│              Athena AI Agent  (runtime.py)              │
-│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌────────┐   │
-│  │  Sensors │→ │  Planner │→ │   LLM    │→ │ Safety │   │
-│  │ (MCP)    │  │          │  │  Policy  │  │  Val.  │   │
-│  └──────────┘  └──────────┘  └──────────┘  └───┬────┘   │
-│                                                │        │
-│                                         set_temperature │
-└─────────────────────────────────────────────────────────┘
-                         │  Writes telemetry row
-                         ▼
-              logs/simulation_log.csv   ← Communication Bus
-                         │
-                         │  Auto-refresh every 6s
-                         ▼
-┌─────────────────────────────────────────────────────────┐
-│           Streamlit Dashboard  (dashboard.py)           │
-│    Digital Twin  |  Agent Pipeline  |  Telemetry ROI    │
-└─────────────────────────────────────────────────────────┘
-```
+<img width="2535" height="1281" alt="Athena sys arch" src="https://github.com/user-attachments/assets/cb52f7e3-b006-4b8b-8dd4-34408a46383b" />
 
 ---
 
